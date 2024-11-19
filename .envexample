@@ -1,0 +1,5 @@
+POSTGRES_USER=*Example*
+POSTGRES_PASSWORD=*Example*
+POSTGRES_DB=*Example*
+SECRET_KEY=*Example*
+SALT=*Example*
