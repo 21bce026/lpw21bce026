@@ -36,3 +36,35 @@ class TokenSuccess(BaseModel):
 
     message: str
     file_name: str
+
+
+class AddBookRequest(BaseModel):
+    """
+    Request Body for adding a book to the database
+    """
+    title = Field(..., example="Book Title")
+    author = Field(..., example="Author Name")
+    version = Field(..., example="1.0")
+    isbn = Field(..., example="978-3-16-148410-0")
+    count = Field(..., example=5)
+
+class AddBookSuccess(BaseModel):
+    """
+    Response Body for a successful book addition
+    """
+
+    message: str
+
+class RentBookRequest(BaseModel):
+    """
+    Request Body for renting a book
+    """
+    email = Field(..., example="user@example.com")
+    book_title = Field(..., example="Book Title")
+
+class RentBookSuccess(BaseModel):
+    """
+    Response Body for a successful book rent
+    """
+    
+    message: str
