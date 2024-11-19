@@ -1,0 +1,12 @@
+onnxruntime>=1.14.1
+python-dotenv
+fastapi
+fastapi[all] 
+uvicorn
+asyncpg
+SQLAlchemy
+sqlalchemy[asyncpg]
+pydantic
+PyJWT
+Authlib
+Authlib
